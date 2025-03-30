@@ -14,4 +14,18 @@ fetch("navbar.html")
       console.log(error);
       document.getElementById("navbar-container").innerHTML = "Nav Bar Not Found(404)";
     }
-  )
+  );
+  //Getting footer
+  //Getting nav bar from files dir
+fetch("footer.html")
+.then(response => response.text())
+.then((data)=>{
+  console.log(data);
+  document.getElementById("footer").innerHTML = data;
+})
+.catch(
+  (error)=>{
+    console.log(error);
+    document.getElementById("footer").innerHTML = "Footer Not Found(404)";
+  }
+);
