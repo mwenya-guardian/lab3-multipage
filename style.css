@@ -12,18 +12,20 @@ nav *{
   text-decoration: none;
   color: rgb(35, 56, 100);
   font-size: x-large;
+  margin-top: 3px;
+  margin-bottom: 8px;
   cursor: context-menu;
   user-select: none;
 }
 .nav-items{ 
   list-style-type: none; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: auto;
 }
 .nav-item{
   font-weight: bolder;
-  margin-left: 5px;
+  margin-left: 10px;
   padding: 1px;
 }
 .nav-item a:hover{
@@ -43,8 +45,26 @@ nav .home:active{
   color: bisque;
 }
 /* Index Body CSS */
+h1{
+  margin-bottom: 2px;
+}
 .flex-container{
   display: flex;
   justify-content: center;
+}
+/* ---------------- */
+/* Services Body CSS */
+.grid-container{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(2, 200px);
+  gap: 10px;
+}
+.grid-container section{
+  padding: 20px;
+  border: 1px solid hsl(33, 100%, 70%);
+  border-radius: 2px;
+  background-color: hsl(38, 100%, 92%);
 }
 /* ---------------- */
