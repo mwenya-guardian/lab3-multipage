@@ -3,9 +3,10 @@ document.getElementById("navbar-container").addEventListener("click", function(e
   console.log(`Clicked ${event.target}`);
 });
 //Getting nav bar from files dir
-fetch("./navbar.html")
-  .then(response =>  response.text)
+fetch("navbar.html")
+  .then(response => response.text())
   .then((data)=>{
+    console.log(data);
     document.getElementById("navbar-container").innerHTML = data;
   })
   .catch(
