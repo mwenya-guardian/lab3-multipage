@@ -46,6 +46,7 @@ nav .home:active{
 }
 /* Index Body CSS */
 h1{
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.226);
   margin-bottom: 2px;
 }
 .flex-container{
@@ -61,10 +62,18 @@ h1{
   grid-template-rows: repeat(2, 200px);
   gap: 10px;
 }
-.grid-container section{
+.grid-container > section{
   padding: 20px;
   border: 1px solid hsl(33, 100%, 70%);
   border-radius: 2px;
   background-color: hsl(38, 100%, 92%);
+}
+.grid-container > section:hover{
+ box-shadow: 2px 2px 2px hsl(38, 67%, 47%);
+ color: green;
+}
+.grid-container section > img{
+  width: 25px;
+  height: 25px;
 }
 /* ---------------- */
