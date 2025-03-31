@@ -1,8 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 body, html{
   min-height: 100vh;
-}
-body *{
-  
 }
 body{
   margin: 10px;
@@ -59,8 +59,9 @@ footer{
 }
 footer > img{
   margin-top: auto;
-  width: 25px;
-  height: 25px;
+  min-width: 25px;
+  max-width: 100%;
+  height: auto;
   margin: 5px;
 }
 footer p{
@@ -99,3 +100,108 @@ h1{
   height: 25px;
 }
 /* ---------------- */
+/* Contact Body CSS */
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container > form{
+  border: 2px solid transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: auto;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  margin: 20px;
+  animation: button-animation 4s linear infinite;
+  animation-delay: 1s;
+}
+.form-container > form *{
+ margin: 2px;
+ padding: 2px;
+ border-radius: 5px;
+}
+
+.form-container > form > button{
+  border: 1px solid bisque;
+  color: rgb(40, 42, 46);
+  background-color: transparent;
+}
+.form-container > form > button:hover{
+  border: 1px solid rgba(165, 42, 42, 0.11);
+  color: rgb(253, 148, 77);
+  background-color: transparent;
+}
+@keyframes button-animation {
+  10% {
+    border-left: 2px solid (5, 124, 221, 0.5);
+  }
+  20% {
+    border-top: 2px solid rgba(30, 255, 0, 0.5);
+  }
+  30% {
+    border-right: 2px solid rgba(48, 194, 3, 0.5);
+  }
+  40% {
+    border-bottom: 2px solid rgb(5, 221, 221, 0.5);
+  }
+  50% {
+    border-left: 2px solid rgba(5, 124, 221, 0.5);
+  }
+}
+/* ---------------- */
+
+
+@media (max-width: 1024px) {
+  body {
+      background-color: rgb(204, 116, 44);
+  }
+  .form-container > form{
+    border: 2px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    animation: button-animation 4s linear infinite;
+    animation-delay: 1s;
+  }
+}
+@media (max-width: 768px) {
+  body {
+      background-color: rgb(13, 139, 180);
+  }
+  .form-container > form{
+    border: 2px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    animation: button-animation 4s linear infinite;
+    animation-delay: 1s;
+  }
+}
+@media (max-width: 480px) {
+  body {
+      background-color: rgb(252, 47, 173);
+  }
+  .form-container > form{
+    border: 2px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    animation: button-animation 4s linear infinite;
+    animation-delay: 1s;
+  }
+}
