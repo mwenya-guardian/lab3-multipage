@@ -221,9 +221,9 @@ h1{
     gap: 10px;
   }
   .flex-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    display: grid!important;
+    grid-template-columns: repeat(1, 1fr)!important;
+    grid-template-rows: auto!important;
     gap: 5px;
   }
 }
