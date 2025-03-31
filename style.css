@@ -190,12 +190,12 @@ h1{
 }
 @media (max-width: 480px) {
   body {
-      background-color: rgb(163, 250, 141);
+      background-color: rgb(204, 179, 151);
   }
   .form-container > form{
     border: 2px solid transparent;
     display: grid;
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: repeat(1, 250px);
     grid-template-rows: auto;
     gap: 10px;
     align-items: center;
