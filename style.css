@@ -213,4 +213,11 @@ h1{
     cursor: context-menu;
     user-select: none;
   }
+  .grid-container{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 1fr); /* 4 equal columns */
+    grid-template-rows: auto;
+    gap: 10px;
+  }
 }
