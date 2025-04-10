@@ -9,6 +9,10 @@ body{
   background-color: bisque;
   color: rgb(35, 56, 100);
 }
+.dark-theme{
+  background-color: #121212;
+  color: #f0f0f0;
+}
 nav {
   display: flex;
   align-items: center;
@@ -227,3 +231,9 @@ h1{
     gap: 5px;
   }
 }
+.answer {
+  display: none;
+  } 
+.answer.visible {
+  display: block;
+  }  
